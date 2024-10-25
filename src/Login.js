@@ -1,7 +1,7 @@
 // components/Login.js
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './App.css'; // Import your styles
+import './Login.css'; // Import your styles
 
 const Login = ({ onLogin }) => {
   const [username, setUsername] = useState('');
@@ -26,7 +26,7 @@ const Login = ({ onLogin }) => {
   };
 
   return (
-    <div className="container">
+    <div className="login-container">
       <h1>Login</h1>
       <form onSubmit={handleSubmit}>
         <label>Username:</label>
